@@ -1,17 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react';  
+import ReactDOM from 'react-dom';  
+import { Route, Link, BrowserRouter as Router, Redirect } from 'react-router-dom'  
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import './index.css'
+import TicTacToe from './Components/tic-tac-toe'; 
+import ConnectFour from './Components/connect-four';
+import Weather from './Components/weather';
+import Yvonne from './Components/yvonne';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const routing = (  
+  <Router>  
+    <div className="navbar">
+      <a><Link to="/">Home</Link></a>   
+      <a><Link to="/tictactoe">Tic-Tac-Toe</Link></a>
+      <a><Link to="/connectfour">Connect-Four</Link></a>
+      <a><Link to="/yvonne">Yvonne</Link></a>
+    </div>  
+    <Route exact path="/" component={Weather}/> 
+    <Route path="/tictactoe" component={TicTacToe}/> 
+    <Route path="/connectfour" component={ConnectFour}/> 
+    <Route path="/yvonne" component={Yvonne}/>
+  </Router>  
+)  
+ReactDOM.render(routing, document.getElementById('root'));  

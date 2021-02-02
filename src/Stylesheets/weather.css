@@ -1,0 +1,59 @@
+.zipCode {
+  margin: 20px 0;
+  display: grid;
+  justify-content: center;
+}
+
+.zipCodeInput {
+  max-width: 200px;
+  height: 2vw;
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 20px;
+}
+    
+.save-btn {
+  
+  align-self: center;
+  justify-self: center;
+}
+
+.weather-info {
+  display: grid;
+}
+        
+.city-name {
+  text-decoration: underline;
+  align-self: center;
+  justify-self: center;
+}
+      
+.overcast {
+  display: grid;
+}
+.overcast-img,
+.overcast-description {
+  align-self: center;
+  justify-self: center;
+}
+      
+.current-weather {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.humidity,
+.curr-temp{
+  align-self: center;
+  justify-self: center;
+}
+
+.temps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.min-temp,
+.max-temp {
+  align-self: center;
+  justify-self: center;
+}
+      

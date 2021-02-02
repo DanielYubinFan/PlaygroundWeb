@@ -1,0 +1,68 @@
+/*body#tictactoe {
+    font: 2vw "ShareTechMono", Futura, sans-serif;
+    margin: 3vw;
+    background-color:rgb(226, 167, 128);
+    text-align: center;
+}*/
+  
+ol, ul {
+    align-content: left;   
+}
+
+button{
+    height: 2.5vw;
+    font: 2vw "ShareTechMono", Futura, sans-serif;
+}
+  
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+  
+.status {
+    margin-bottom: 100px;
+}
+  
+.square {
+    background: rgb(203, 233, 203);
+    border: 3px solid black;
+    float: left;
+    font-size: 7vw;
+    font-weight: bold;
+    line-height: 8vw;
+    height: 8vw;
+    width: 8vw;
+    margin-right: -2px;
+    margin-top: -2px;
+    padding: 0;
+    text-align: center;
+}
+  
+.square:focus {
+    outline: none;
+}
+  
+.kbd-navigation .square:focus {
+    background: #ddd;
+}
+  
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+  
+.game-info {
+    margin-left: 100px;
+}
+
+@font-face {
+    font-family: 'ShareTechMono';
+    src: URL('../assets/Fonts/ShareTechMono-Regular.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'MajorMonoDisplay';
+    src: URL('../assets/Fonts/MajorMonoDisplay-Regular.ttf') format('woff');
+}
